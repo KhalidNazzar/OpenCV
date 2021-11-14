@@ -14,7 +14,6 @@ cv2.destroyWindow('Original Image')
 blob = cv2.dnn.blobFromImage(image_BGR, 1 / 255.0, (416, 416),
                              swapRB=True, crop=False)
 
-# Check point
 print('Image shape:', image_BGR.shape)  # (511, 767, 3)
 print('Blob shape:', blob.shape)  # (1, 3, 416, 416)
 
