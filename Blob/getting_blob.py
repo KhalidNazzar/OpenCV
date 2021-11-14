@@ -18,9 +18,6 @@ blob = cv2.dnn.blobFromImage(image_BGR, 1 / 255.0, (416, 416),
 print('Image shape:', image_BGR.shape)  # (511, 767, 3)
 print('Blob shape:', blob.shape)  # (1, 3, 416, 416)
 
-# Check point
-# Showing blob image in OpenCV window
-# Slicing blob image and transposing to make channels come at the end
 blob_to_show = blob[0, :, :, :].transpose(1, 2, 0)
 print(blob_to_show.shape)  # (416, 416, 3)
 
